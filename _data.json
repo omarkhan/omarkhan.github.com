@@ -2,8 +2,8 @@
   "projects": {
     "projects": [
       "london-tube-income",
-      "coffeedoc",
       "photobooth",
+      "coffeedoc",
       "coffeekup-optimized"
     ]
   }
