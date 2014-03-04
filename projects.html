@@ -7,15 +7,34 @@ ga('send', 'pageview');</script></head><body><header><div><h1 class="middle"><a 
 <p>Inspired by <a href="http://www.newyorker.com/sandbox/business/subway.html">this feature in the New Yorker</a>, this is my attempt to learn
 <a href="http://d3js.org/">d3</a> while grappling with the UK neighbourhood statistics API.</p>
 <p>The visualization shows income inequality along London tube lines. My only rule
-here was to use <em>only</em> d3 (no jquery!). I can confirm that DOM apis are indeed
+here was to use <em>only</em> d3 (no jquery!). I can confirm that DOM APIs are indeed
 horrible, and that&#39;s without even trying to support IE.</p>
-<p>For what it&#39;s worth I don&#39;t think the d3 api is very nice either, unless you
+<p>For what it&#39;s worth I don&#39;t think the d3 API is very nice either, unless you
 <em>really</em> like lots of chaining. I just don&#39;t find long chains of method calls
 very readable.</p>
-</article></div><div class="wrapper odd"><article><h3><a href="https://github.com/omarkhan/coffeedoc">CoffeeDoc</a></h3>
+</article></div><div class="wrapper odd"><article><h3><a href="https://github.com/omarkhan/photobooth">Khanival Photobooth</a></h3>
+<p>When my brother got married in 2012, he wanted a photo booth so that guests
+could take memorable pictures of themselves in a wide variety of silly outfits.
+Being a young musician, he couldn&#39;t afford the real deal, so I was given the
+task of hacking one together using an old netbook and his DSLR.</p>
+<p>The hastily-written is code responsible for some very embarrassing pictures. It
+works as follows:</p>
+<ul>
+<li>A nodejs server script serves a single page with some client code.</li>
+<li>The client code uses <code>getUserMedia</code> to display the webcam image on the screen,
+as well as a helpful &#39;press a key to take a picture&#39; message.</li>
+<li>When a drunk guest presses a key, the client notifies the server over
+websockets using <a href="http://socket.io/">socket.io</a>.</li>
+<li>The server then shells out to <a href="http://www.gphoto.org/proj/gphoto2/">gphoto2</a>, which takes 4 pictures using the
+attached camera balanced just above the webcam.</li>
+<li>Once the pictures are ready, the server thumbnails them and notifies the
+client over websockets.</li>
+<li>The client displays the images, everyone is amused.</li>
+</ul>
+</article></div><div class="wrapper even"><article><h3><a href="https://github.com/omarkhan/coffeedoc">CoffeeDoc</a></h3>
 <p>I <em>loved</em> <a href="http://coffeescript.org/">CoffeeScript</a> when I first discovered it, back when the language
 was picking up steam in 2011. I was just getting to grips with javascript, and
-coming from python I found the indened, curly-brace free language far more
+coming from python I found the indented, curly-brace free language far more
 readable.</p>
 <p>I was looking for some tools to generate documentation for a project, and came
 across <a href="http://jashkenas.github.com/docco/">Docco</a>. It could generate some nice-looking annotated source pages,
@@ -30,25 +49,6 @@ CoffeeScript compiler, I had a working documentation tool.</p>
 be an ideal fit for existing codebases, but if you&#39;re starting a new project and
 you have a python background, you might like it. Have a look at <a href="http://wintersmith.io/docs/">the lovely
 wintersmith.io docs</a> to see what it can do.</p>
-</article></div><div class="wrapper even"><article><h3><a href="https://github.com/omarkhan/photobooth">Khanival Photobooth</a></h3>
-<p>When my brother got married in 2012, he wanted a photo booth so that guests
-could take memorable pictures of themselves in a wide variety of silly outfits.
-Being a young musician, he couldn&#39;t afford the real deal, so I was given the
-task of hacking one together using an old netbook and his DSLR.</p>
-<p>The hastily-written is code responsible for some very embarassing pictures. It
-works as follows:</p>
-<ul>
-<li>A nodejs server script serves a single page with some client code.</li>
-<li>The client code uses <code>getUserMedia</code> to display the webcam image on the screen,
-as well as a helpful &#39;press a key to take a picture&#39; message.</li>
-<li>When a drunk guest presses a key, the client notifies the server over
-websockets using <a href="http://socket.io/">socket.io</a>.</li>
-<li>The server then shells out to <a href="http://www.gphoto.org/proj/gphoto2/">gphoto2</a>, which takes 4 pictures using the
-attached camera balanced just above the webcam.</li>
-<li>Once the pictures are ready, the server thumbnails them and notifies the
-client over websockets.</li>
-<li>The client displays the images, everyone is amused.</li>
-</ul>
 </article></div><div class="wrapper odd"><article><h3><a href="https://github.com/mauricemach/coffeekup/pull/87">CoffeeKup Optimization</a></h3>
 <p>Back when I was getting to know <a href="http://coffeescript.org/">CoffeeScript</a>, I loved it so much I wanted
 to use it for everything, including frontend templates. I found <a href="http://coffeekup.org/">CoffeeKup</a>,
