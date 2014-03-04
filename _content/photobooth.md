@@ -5,7 +5,7 @@ could take memorable pictures of themselves in a wide variety of silly outfits.
 Being a young musician, he couldn't afford the real deal, so I was given the
 task of hacking one together using an old netbook and his DSLR.
 
-The hastily-written is code responsible for some very embarassing pictures. It
+The hastily-written is code responsible for some very embarrassing pictures. It
 works as follows:
 
 - A nodejs server script serves a single page with some client code.
