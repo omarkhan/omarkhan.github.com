@@ -1,0 +1,17 @@
+header
+  div
+    h1.middle
+      a(href='/') Omar Khan
+  div.subtitle
+    div.middle
+      nav
+        ul
+          li: a(href='https://github.com/omarkhan') github
+          li: a(href='http://uk.linkedin.com/pub/omar-khan/28/797/530/') linkedin
+      h2 Projects
+
+main
+  for project, index in projects
+    - var odd = index % 2
+    div.wrapper(class=odd ? 'odd' : 'even')
+      article!= partial('_content/' + project)

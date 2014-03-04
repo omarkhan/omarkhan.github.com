@@ -1,4 +1,4 @@
-## [CoffeeDoc][1]
+### [CoffeeDoc][1]
 
 I *loved* [CoffeeScript][2] when I first discovered it, back when the language
 was picking up steam in 2011. I was just getting to grips with javascript, and
