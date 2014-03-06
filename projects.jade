@@ -12,6 +12,5 @@ header
 
 main
   for project, index in projects
-    - var odd = index % 2
-    div.wrapper(class=odd ? 'odd' : 'even')
-      article!= partial('_content/' + project)
+    div.wrapper(class=index % 2 ? 'odd' : 'even')
+      article(id=project)!= partial('_content/' + project)

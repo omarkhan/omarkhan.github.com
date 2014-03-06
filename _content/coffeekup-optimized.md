@@ -1,4 +1,4 @@
-### [CoffeeKup Optimization][1]
+### [CoffeeKup Optimization][1] [&para;](#coffeekup-optimized)
 
 Back when I was getting to know [CoffeeScript][2], I loved it so much I wanted
 to use it for everything, including frontend templates. I found [CoffeeKup][3],

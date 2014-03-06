@@ -1,4 +1,4 @@
-### [Khanival Photobooth][1]
+### [Khanival Photobooth][1] [&para;](#photobooth)
 
 When my brother got married in 2012, he wanted a photo booth so that guests
 could take memorable pictures of themselves in a wide variety of silly outfits.

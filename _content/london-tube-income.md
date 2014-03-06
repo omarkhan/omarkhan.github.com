@@ -1,4 +1,4 @@
-### [Mind the Gap][1]
+### [Mind the Gap][1] [&para;](#london-tube-income)
 
 Inspired by [this feature in the New Yorker][2], this is my attempt to learn
 [d3][3] while grappling with the UK neighbourhood statistics API.
