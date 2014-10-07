@@ -1,6 +1,7 @@
 {
   "projects": {
     "projects": [
+      "httptrail",
       "spidertrap",
       "london-tube-income",
       "photobooth",
